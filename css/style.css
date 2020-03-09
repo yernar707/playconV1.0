@@ -1,0 +1,220 @@
+html{
+	height: 100%;
+}
+*{
+	font-family: 'Play', sans-serif;
+}
+*:focus{
+	outline: none !important;
+}
+*:active{
+	outline: none !important;
+}
+body{
+	height: 100%;
+	background: linear-gradient(-45deg, #ffbaba, #fdd2e2, #abe9ff, #b8ffee) no-repeat;
+	background-size: 500% 500%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.navbar-inverse .navbar-brand{
+	position: relative;
+	left: 25%;
+	font-size: 30px;
+	font-weight: 700;
+	color: #ffffff;
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	font-size: 17px;
+	text-align: center;
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	font-size: 17px;
+	text-align: center;
+}
+.title{
+	font-weight: 700;
+}
+.action_form{
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 100%;
+	transition: opacity 0.5s;
+}
+.action_form .item_field{
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	display: flex;
+	margin-bottom: 10px;
+}
+.action_form button{
+	width: 30%;
+	border: 1px black solid;
+	border-radius: 17px; 
+	height: 35px;
+	background-color: #333;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+}
+.action_form input[type=text],.action_form input[type=number],.action_form input[type=time],.action_form input[type=password],.action_form input[type=email],.action_form input[type=tel],.action_form select,.action_form input[type=date]{
+	width: 100%;
+	border: none;
+	border-radius: 20px;
+	height: 40px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.action_form input[type=checkbox]{
+	width: 10%;
+	border: none;
+	border-radius: 20px;
+	height: 20px;
+	padding-right: 12px;
+	padding-left: 12px;
+	margin: 0;
+	margin-left: 0;
+	margin-right: auto;
+}
+.action_form select{
+
+}
+.window{
+    width: 100%; 
+    margin-bottom: 25px;
+}
+.detail_title{
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100px;
+    color: #707070;
+    font-weight: 700;
+    font-size: 17px;
+    
+}
+.detail_value{
+    word-break: break-all;
+	display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-weight: 500;
+    font-size: 18px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.detail{
+    padding: 20px 10px;
+    border-bottom: 1px solid #ffdbdb;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    
+}
+.wrap button{
+	padding:5px 20px;
+	max-width: 60%;
+	word-break: break-all;
+	display: inline-block;
+	border: 1px black solid;
+	border-radius: 17px; 
+	background-color: #333;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+.info .detail_title{
+	text-align: right;
+	padding-right: 10px;
+}
+.info .detail{
+	padding: 5px 10px;	
+    border-bottom: 1px solid #ffdbdb;
+}
+.info_window , .info .last{
+
+    border-bottom: 1px solid #b0b0b0;
+}
+input[type=button],input[type=submit]{
+
+	padding:5px 20px;
+	max-width: 60%;
+	word-break: break-all;
+	display: inline-block;
+	border: 1px black solid;
+	border-radius: 17px; 
+	background-color: #333;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+
+	font-size: 18px;
+	vertical-align: middle;
+}
+.detail_value form{
+	width: 100%;
+	text-align: right;
+}
+.participants .detail{
+	padding: 5px 10px;
+}
+
+
+@media (min-width: 768px){
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 100px;
+    margin-left: 100px;
+    }}
